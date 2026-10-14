@@ -17,9 +17,9 @@ namespace Infrastructure.Data
 
        
 
-        public Task<int> SaveChangesasync(CancellationToken cancellationToken)
+        public async Task<int> SaveChangesasync(CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }
