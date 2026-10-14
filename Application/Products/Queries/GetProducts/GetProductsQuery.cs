@@ -8,9 +8,8 @@ using System.Text;
 
 namespace Application.Products.Queries.GetProducts
 {
-    public class GetProductsQuery : IRequest<List<ProductDto>>
-    {
-    }
+    public record GetProductsQuery : IRequest<List<ProductDto>>
+    
 
     public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, List<ProductDto>>
     {
